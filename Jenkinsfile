@@ -60,7 +60,7 @@ pipeline {
                     sh '''
                     aws ecs update-service \
                       --cluster fargate-example-cluster1 \
-                      --service fargate-lb-service1 \
+                      --service Fargate-service  \
                       --force-new-deployment \
                       --region $AWS_REGION
                     '''
